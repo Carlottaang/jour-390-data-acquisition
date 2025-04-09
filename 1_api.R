@@ -15,4 +15,3 @@ status_code <- status_code(response)
 
 # extract data from the response 
 api_data <- fromJSON(content(response, as = "text"))
-
