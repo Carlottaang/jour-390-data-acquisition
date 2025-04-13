@@ -1,4 +1,4 @@
-## Jour 390: API and data portal dive labs 
+## Jour 390: Data acquisition
 This repository contains an API from the Chicago Data Portal. The URL
 for the dataset used is https://data.cityofchicago.org/resource/dpt3-jri9. 
 

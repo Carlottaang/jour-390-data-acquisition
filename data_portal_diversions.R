@@ -18,3 +18,8 @@ diversions |>
   count(diversion_result) |> 
   mutate(pct = n / nrow(diversions) * 100) |> 
   arrange(desc(n))
+
+# RJCC cases 
+diversions |> 
+  filter(diversion_program == "RJCC") |> 
+  count(diversion_result)
