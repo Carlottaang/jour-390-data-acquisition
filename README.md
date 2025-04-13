@@ -8,4 +8,5 @@ percentage of these arrests as compared to how many arrests there
 are in the dataset. 
 
 I also included some data exploration for the data portal dive lab
-in the R script `data_portal_diversions.R`. 
+in the R script `data_portal_diversions.R`. The diversion data is from 
+the Cook County Government Open Data website. 
