@@ -28,10 +28,6 @@ api_data |>
   janitor::clean_names() |> 
   # finding which charge 1s involved driving
   filter(str_detect(charge_1_description, "^DRIVING")) |>
-  # removed unnecessary/unhelpful variables
-  select(-computed_region_vrxf_vc4k, -computed_region_6mkv_f3dw,
-         -computed_region_bdys_3d7i, -computed_region_43wa_7qmu,
-         -computed_region_rpca_8um6) |> 
   # finding total for each charge type - M or F 
   count(charge_1_type) |> 
   # arranging from largest to smallest value
@@ -40,9 +36,7 @@ api_data |>
 
 # looked at arrests that involved driving in the most serious charge
 # charge 1 = most serious charge 
-# 50,100 M (misdemeanor) and 7,792 F (felony) as of 4/13/2025
-
-
+# 50,104 M (misdemeanor) and 7,794 F (felony) as of 4/13/2025 data
 
 
 
