@@ -30,6 +30,9 @@ api_data |>
   filter(str_detect(charge_1_description, "^DRIVING")) |>
   # finding total for each charge type - M or F 
   count(charge_1_type) |> 
+  # finding percentage of total arrests 
+  mutate(pct = n / nrow(api_data) * 100,
+         pct = round(pct, 4)) |> 
   # arranging from largest to smallest value
   arrange(desc(n)) |> 
   view()
